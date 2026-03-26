@@ -252,6 +252,7 @@ input, select, textarea {
     align-items: flex-start;
   }
 }
+<<<<<<< HEAD
 
 
 a:focus-visible,
@@ -271,3 +272,5 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+=======
+>>>>>>> d51cd87 (Refactor homepage into structured HTML, CSS, and JS files)

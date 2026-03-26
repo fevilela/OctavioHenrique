@@ -1,5 +1,6 @@
 const nav = document.querySelector('.nav');
 const toggle = document.querySelector('.menu-toggle');
+<<<<<<< HEAD
 const navLinks = document.querySelectorAll('.nav-links a');
 
 if (toggle && nav) {
@@ -15,6 +16,12 @@ if (toggle && nav) {
 
   navLinks.forEach((link) => {
     link.addEventListener('click', () => setMenuState(false));
+=======
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+>>>>>>> d51cd87 (Refactor homepage into structured HTML, CSS, and JS files)
   });
 }
 
