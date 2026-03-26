@@ -134,7 +134,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: auto;
   padding-top: 84px;
   background:
@@ -150,6 +150,7 @@ a {
 
 .hero-copy {
   display: flex;
+  align-items: center;
   padding: 4rem 0;
 }
 
@@ -276,7 +277,7 @@ h3 {
   position: relative;
   overflow: hidden;
   border-left: 1px solid rgba(123, 53, 245, .55);
-  min-height: clamp(620px, 58vw, 980px);
+  min-height: clamp(420px, 42vw, 680px);
 }
 
 .hero-bg {
@@ -401,7 +402,7 @@ h3 {
   }
 
   .hero-visual {
-    min-height: clamp(540px, 62vw, 820px);
+    min-height: clamp(380px, 44vw, 620px);
   }
 
   .hero-mark img {
@@ -1184,7 +1185,7 @@ h3 {
 
     .hero-visual {
       order: 1;
-      min-height: clamp(320px, 58vw, 520px);
+      min-height: clamp(260px, 48vw, 420px);
       border-left: 0;
       border-bottom: 1px solid rgba(123, 53, 245, .45);
     }
@@ -1311,7 +1312,7 @@ h3 {
       }
 
       .hero-visual {
-        min-height: clamp(260px, 82vw, 420px);
+        min-height: clamp(220px, 60vw, 360px);
       }
 
       .hero-mark img {
