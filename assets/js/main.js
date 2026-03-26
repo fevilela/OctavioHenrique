@@ -1,7 +1,10 @@
 const nav = document.querySelector('.nav');
 const toggle = document.querySelector('.menu-toggle');
+<<<<<<< ours
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> theirs
 const navLinks = document.querySelectorAll('.nav-links a');
 
 if (toggle && nav) {
@@ -17,6 +20,7 @@ if (toggle && nav) {
 
   navLinks.forEach((link) => {
     link.addEventListener('click', () => setMenuState(false));
+<<<<<<< ours
 =======
 =======
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -39,6 +43,8 @@ if (toggle && nav) {
   navLinks.forEach((link) => {
     link.addEventListener('click', () => setMenuState(false));
 >>>>>>> a763ca9 (Refine frontend assets for accessibility and maintainability)
+=======
+>>>>>>> theirs
   });
 }
 
