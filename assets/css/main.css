@@ -117,9 +117,7 @@ a { color: inherit; }
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(8,8,8,.8) 0%, rgba(8,8,8,.08) 54%, rgba(8,8,8,.24) 100%),
-    radial-gradient(circle at 72% 42%, rgba(155,92,255,.18) 0%, rgba(155,92,255,0) 34%);
+  background: linear-gradient(90deg, rgba(8,8,8,.8) 0%, rgba(8,8,8,.08) 54%, rgba(8,8,8,.24) 100%);
 }
 
 .hero-bg img {
