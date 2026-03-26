@@ -303,22 +303,92 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   }
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 1200px) {
+  .container {
+    width: min(1180px, 94%);
+  }
+
+  .nav {
+    min-height: 78px;
+  }
+
+  .nav-links {
+    gap: 1.1rem;
+  }
+
+  .nav-links a {
+    font-size: .67rem;
+    letter-spacing: .12em;
+  }
+
+  .nav-cta {
+    padding-inline: 1.15rem;
+    font-size: .66rem;
+  }
+
   .hero {
-    grid-template-columns: minmax(0, .96fr) minmax(0, 1.04fr);
+    grid-template-columns: 1fr 1fr;
+    padding-top: 78px;
   }
 
   .hero-copy {
-    padding-left: clamp(2.4rem, 4vw, 4.8rem);
-    padding-right: clamp(1.8rem, 3vw, 3rem);
+    padding: 3.5rem 1.4rem 3.8rem 2rem;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 560px;
+    padding-left: 1rem;
   }
 
   .hero-content h1 {
-    font-size: clamp(4rem, 6.2vw, 6.2rem);
+    font-size: clamp(3.4rem, 7vw, 5.6rem);
+    max-width: 7.8ch;
   }
 
   .hero-lead {
-    font-size: clamp(1rem, 1vw, 1.12rem);
+    max-width: 24ch;
+    font-size: 1rem;
+  }
+
+  .hero-actions .btn {
+    min-width: 180px;
+  }
+
+  .hero-visual {
+    min-height: clamp(540px, 62vw, 820px);
+  }
+
+  .hero-mark img {
+    width: min(78%, 520px);
+  }
+
+  .about {
+    grid-template-columns: .9fr 1.1fr;
+    gap: 2rem;
+    padding-block: 5rem;
+  }
+
+  .about-title {
+    font-size: clamp(2.8rem, 5vw, 4.3rem);
+  }
+
+  .service-showcase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .method-layout {
+    grid-template-columns: .9fr 1.1fr;
+    gap: 2rem;
+  }
+
+  .results-grid-showcase,
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    min-height: auto;
   }
 }
 
@@ -978,17 +1048,29 @@ input, select, textarea {
     border-bottom: 1px solid var(--line);
   }
 
+  .container {
+    width: min(100%, 92%);
+  }
+
+  .nav {
+    min-height: 72px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
   .menu-toggle { display: inline-flex; }
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 84px;
+    padding-top: 72px;
   }
 
   .hero-copy {
     order: 2;
     justify-content: stretch;
-    padding: 2.2rem 1.5rem 3rem;
+    padding: 2rem 1.1rem 2.8rem;
   }
 
   .hero-panel {
@@ -1011,7 +1093,7 @@ input, select, textarea {
   }
 
   .hero-lead {
-    max-width: 34ch;
+    max-width: 30ch;
     font-size: 1rem;
   }
 
@@ -1032,6 +1114,64 @@ input, select, textarea {
     right: -10%;
     top: 54%;
   }
+
+  .about {
+    padding-block: 4rem;
+  }
+
+  .about-image img {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .about-badge {
+    width: 62px;
+    height: 62px;
+  }
+
+  .service-panel {
+    padding: 1.7rem 1.2rem;
+  }
+
+  .service-number {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .method-row {
+    grid-template-columns: 56px 1fr;
+    gap: 1rem;
+    padding: 1.3rem 0;
+  }
+
+  .method-number {
+    font-size: 2.3rem;
+  }
+
+  .result-card {
+    padding: 1.4rem 1.2rem 1.25rem;
+  }
+
+  .result-card p {
+    margin: 1rem 0 1.5rem;
+    font-size: .95rem;
+  }
+
+  .plan-card {
+    padding: 1.7rem 1.2rem 1.35rem;
+  }
+
+  .plan-price {
+    font-size: 3rem;
+  }
+
+  .cta-actions {
+    gap: .75rem;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
   .nav-links,
   .nav > .btn-primary { display: none; }
 
@@ -1040,11 +1180,87 @@ input, select, textarea {
     position: absolute;
     left: 4%;
     right: 4%;
-    top: 76px;
+    top: 72px;
     background: #0d0d12;
     border: 1px solid var(--line);
     border-radius: 10px;
     padding: .8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3.6rem 0;
+  }
+
+  .section-kicker,
+  .about-kicker,
+  .eyebrow {
+    font-size: .62rem;
+    letter-spacing: .24em;
+  }
+
+  .eyebrow {
+    gap: .7rem;
+  }
+
+  .eyebrow::before {
+    width: 24px;
+  }
+
+  .hero-content {
+    padding-left: .85rem;
+  }
+
+  .hero-content::before {
+    height: 140px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.7rem, 15vw, 4.2rem);
+    line-height: .92;
+  }
+
+  .hero-lead {
+    line-height: 1.6;
+  }
+
+  .hero-visual {
+    min-height: clamp(260px, 82vw, 420px);
+  }
+
+  .hero-mark img {
+    width: 92%;
+    right: -16%;
+  }
+
+  .about-title,
+  .section-display {
+    font-size: clamp(2.3rem, 13vw, 3.6rem);
+  }
+
+  .about-copy p,
+  .method-row p,
+  .service-panel p,
+  .plans-subtitle,
+  .cta-copy {
+    font-size: .95rem;
+    line-height: 1.7;
+  }
+
+  .method-layout,
+  .results-grid-showcase,
+  .plans-grid {
+    gap: 1rem;
+  }
+
+  .contact-list {
+    gap: .9rem;
+  }
+
+  .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
   }
