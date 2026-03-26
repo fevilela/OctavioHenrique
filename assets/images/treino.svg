@@ -28,5 +28,13 @@
     <rect x="640" y="520" width="120" height="34" rx="16" fill="url(#accent)"/>
     <rect x="336" y="532" width="306" height="10" rx="5" fill="#e8d8ff"/>
   </g>
+<<<<<<< ours
+<<<<<<< ours
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1116 2000" width="1116" height="2000" preserveAspectRatio="xMidYMid slice"></svg>
+=======
+</svg>
+>>>>>>> theirs
+=======
+</svg>
+>>>>>>> theirs

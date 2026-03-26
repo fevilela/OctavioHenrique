@@ -235,6 +235,13 @@ input, select, textarea {
   }
 
   .menu-toggle { display: inline-flex; }
+  .hero-content {
+    padding: 3.2rem 0;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
   .nav-links,
   .nav > .btn-primary { display: none; }
 
@@ -252,9 +259,6 @@ input, select, textarea {
     align-items: flex-start;
   }
 }
-
-a:focus-visible,
-button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
