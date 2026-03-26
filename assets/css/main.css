@@ -93,9 +93,15 @@ a { color: inherit; }
 
 .hero {
   position: relative;
+<<<<<<< ours
   min-height: 76vh;
   display: grid;
   align-items: center;
+=======
+  min-height: calc(100vh - 76px);
+  display: grid;
+  align-items: stretch;
+>>>>>>> theirs
 }
 
 .hero-bg {
@@ -120,8 +126,29 @@ a { color: inherit; }
 .hero-content {
   position: relative;
   z-index: 1;
+<<<<<<< ours
   padding: 4rem 0;
   max-width: 680px;
+=======
+  padding: clamp(2.5rem, 7vh, 5rem) 0;
+  max-width: 760px;
+  min-height: calc(100vh - 76px);
+  display: grid;
+  align-content: center;
+}
+
+.hero-content::after {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: min(52vh, 420px);
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(155,92,255,.05), rgba(155,92,255,.95), rgba(155,92,255,.08));
+  box-shadow: 0 0 32px rgba(155, 92, 255, .55);
+>>>>>>> theirs
 }
 
 .eyebrow {
@@ -138,6 +165,57 @@ h1 span { color: var(--primary-2); }
 h2 { font-size: clamp(1.6rem, 4vw, 2.6rem); margin: .5rem 0 1rem; }
 h3 { font-size: 1.1rem; margin-bottom: .5rem; }
 
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+
+.hero-content h1 {
+  text-wrap: balance;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, .45);
+<<<<<<< ours
+=======
+  line-height: .94;
+  letter-spacing: -0.02em;
+  max-width: 11ch;
+  margin-bottom: 1.1rem;
+>>>>>>> theirs
+}
+
+.hero-lead {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.5;
+  max-width: 62ch;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.hero-lead strong {
+  color: var(--primary-2);
+  font-weight: 700;
+}
+
+<<<<<<< ours
+=======
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: .75rem;
+}
+
+>>>>>>> theirs
+.section h2 {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  letter-spacing: -0.01em;
+}
+
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 .section { padding: 4.5rem 0; }
 .section-dark { background: var(--surface); }
 
@@ -235,8 +313,30 @@ input, select, textarea {
   }
 
   .menu-toggle { display: inline-flex; }
+<<<<<<< ours
+<<<<<<< ours
+=======
+
+>>>>>>> theirs
   .hero-content {
     padding: 3.2rem 0;
+=======
+
+  .hero-content {
+    padding: 3.2rem 0;
+    min-height: auto;
+  }
+
+  .hero-content::after {
+    left: -20px;
+    width: 2px;
+    height: 180px;
+  }
+
+  .hero-content h1 {
+    line-height: .98;
+    max-width: 100%;
+>>>>>>> theirs
   }
 
   .hero-lead {
@@ -259,6 +359,19 @@ input, select, textarea {
     align-items: flex-start;
   }
 }
+<<<<<<< ours
+<<<<<<< ours
+=======
+=======
+>>>>>>> theirs
+
+
+a:focus-visible,
+button:focus-visible,
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
