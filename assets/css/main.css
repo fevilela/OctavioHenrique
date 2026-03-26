@@ -252,11 +252,6 @@ input, select, textarea {
     align-items: flex-start;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a763ca9 (Refine frontend assets for accessibility and maintainability)
-
 
 a:focus-visible,
 button:focus-visible,
@@ -275,8 +270,3 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
-<<<<<<< HEAD
-=======
->>>>>>> d51cd87 (Refactor homepage into structured HTML, CSS, and JS files)
-=======
->>>>>>> a763ca9 (Refine frontend assets for accessibility and maintainability)
