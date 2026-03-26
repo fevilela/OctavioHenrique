@@ -1,9 +1,20 @@
 const nav = document.querySelector('.nav');
 const toggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelectorAll('.nav-links a');
+
 if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
+  const setMenuState = (open) => {
+    nav.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  };
+
+  toggle.addEventListener('click', () => {
+    setMenuState(!nav.classList.contains('open'));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => setMenuState(false));
   });
 }
 
