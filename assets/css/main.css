@@ -93,16 +93,7 @@ a { color: inherit; }
 
 .hero {
   position: relative;
-  min-height: 76vh;
-  display: grid;
-  align-items: center;
-  min-height: calc(100vh - 76px);
-  display: grid;
-  align-items: stretch;
-  min-height: calc(100vh - 76px);
-  display: grid;
-  align-items: stretch;
-  min-height: calc(100vh - 76px);
+  min-height: clamp(620px, calc(100vh - 76px), 920px);
   display: grid;
   align-items: stretch;
 }
@@ -131,12 +122,9 @@ a { color: inherit; }
 .hero-content {
   position: relative;
   z-index: 1;
-
-  padding: 4rem 0;
-  max-width: 680px;
-  padding: clamp(2.5rem, 7vh, 5rem) 0;
-  max-width: 760px;
-  min-height: calc(100vh - 76px);
+  width: min(48vw, 760px);
+  padding: clamp(2.5rem, 6vh, 5rem) 0;
+  min-height: clamp(620px, calc(100vh - 76px), 920px);
   display: grid;
   align-content: center;
 }
@@ -175,10 +163,11 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   letter-spacing: -0.02em;
   max-width: 11ch;
   margin-bottom: 1.1rem;
+  font-size: clamp(2.4rem, 4.4vw, 4.8rem);
 }
 
 .hero-lead {
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
   line-height: 1.5;
   max-width: 62ch;
   color: #fff;
@@ -220,8 +209,8 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: minmax(280px, .95fr) minmax(320px, 1.05fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: center;
 }
 
@@ -229,6 +218,8 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
+  object-position: center 18%;
+  max-height: clamp(420px, 58vw, 720px);
   border-radius: 12px;
   border: 1px solid var(--line);
 }
@@ -302,6 +293,7 @@ input, select, textarea {
   .menu-toggle { display: inline-flex; }
   .hero-content {
     padding: 3.2rem 0;
+    width: min(100%, 760px);
   }
 
   .hero-content {
@@ -322,6 +314,10 @@ input, select, textarea {
 
   .hero-lead {
     font-size: 1rem;
+  }
+
+  .about-image img {
+    max-height: none;
   }
   .nav-links,
   .nav > .btn-primary { display: none; }
