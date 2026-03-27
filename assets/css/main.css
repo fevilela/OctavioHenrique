@@ -1186,9 +1186,6 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .contact-copy {
-    order: -1;
-  }
 
   .service-showcase-grid,
   .results-grid-showcase,
