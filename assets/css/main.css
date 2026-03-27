@@ -1066,6 +1066,12 @@ h3 {
   color: var(--primary-2);
 }
 
+.contact-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact-actions {
   display: flex;
   gap: .9rem;
@@ -1178,6 +1184,10 @@ textarea {
   .contact-layout,
   .hero-inner {
     grid-template-columns: 1fr;
+  }
+
+  .contact-copy {
+    order: -1;
   }
 
   .service-showcase-grid,
