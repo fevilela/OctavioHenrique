@@ -841,7 +841,6 @@ h3 {
 .before-after-grid {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(0, 100%);
   gap: 1.35rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
